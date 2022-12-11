@@ -1,0 +1,94 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "hendrik_loesch_api";
+
+package hendrik_loesch_api;
+
+// Publication Types
+message PublicationType {
+  string Id = 1;
+  string Name = 2;
+}
+
+message PublicationTypesRequest { }
+
+message PublicationTypeCollection {
+  repeated PublicationType Types = 1;
+}
+
+service PublicationTypeService {
+  rpc GetAll(PublicationTypesRequest) returns (PublicationTypeCollection);
+
+}
+
+// Publications
+message Publication {
+  
+  string Date = 1;
+  string Description = 2;
+  uint32 Id = 3;
+  string Link = 4;
+  string Medium = 5;
+  string MediumDescription = 6;
+  string MediumUrl = 7;
+  string Name = 8;
+  string Publisher = 9;
+  string PublisherUrl = 10;
+  PublicationType Type = 11;
+}
+
+message PublicationsRequest { }
+
+message PublicationCollection {
+  repeated Publication Publications = 1;
+}
+
+service PublicationService {
+  rpc GetAll(PublicationsRequest) returns (PublicationCollection);
+}
+
+// Video Trainings
+message Videotraining {  
+  string Description = 1;
+  string ImageUrl = 2;
+  string Length = 3;
+  string PublicationDate = 4;
+  string Publisher = 5;
+  string Subtitle = 6;
+  google.protobuf.Timestamp Timestamp = 7;
+  string Title = 8;
+  string Url = 9;
+  string Id = 10;
+}
+
+message VideotrainingCollection {
+  repeated Videotraining Videotraining = 1;
+}
+
+message VideotrainingsRequest { }
+
+service VideotrainingService {
+  rpc GetAll(VideotrainingsRequest) returns (VideotrainingCollection);
+}
+
+// Presentation
+message Presentation {
+  string Abstract = 1;
+  string Id = 2;
+  string Image = 3;
+  string Name = 4;
+  string SlideshareLink = 5;
+  string Type = 6;
+}
+
+message PresentationCollection {
+  repeated Presentation Presentation = 1;
+}
+
+message PresentationsRequest { }
+
+service PresentationService {
+  rpc GetAll(PresentationsRequest) returns (PresentationCollection);
+}

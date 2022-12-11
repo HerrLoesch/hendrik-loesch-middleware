@@ -1,0 +1,3 @@
+obj/Debug/net7.0/Protos/Hendrik-loeschGrpc.cs \
+obj/Debug/net7.0/Protos/HendrikLoesch.cs: /home/codespace/.nuget/packages/grpc.tools/2.49.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/hendrik-loesch.proto

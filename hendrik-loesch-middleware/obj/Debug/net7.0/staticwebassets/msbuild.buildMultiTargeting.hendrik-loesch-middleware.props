@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/hendrik-loesch-middleware.props" />
+</Project>
