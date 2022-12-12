@@ -32,3 +32,6 @@
 /workspaces/hendrik-loesch-middleware/hendrik-loesch-middleware/obj/Debug/net7.0/hendrik-loesch-middleware.pdb
 /workspaces/hendrik-loesch-middleware/hendrik-loesch-middleware/obj/Debug/net7.0/hendrik-loesch-middleware.genruntimeconfig.cache
 /workspaces/hendrik-loesch-middleware/hendrik-loesch-middleware/obj/Debug/net7.0/ref/hendrik-loesch-middleware.dll
+/workspaces/hendrik-loesch-middleware/hendrik-loesch-middleware/bin/Debug/net7.0/NLog.dll
+/workspaces/hendrik-loesch-middleware/hendrik-loesch-middleware/bin/Debug/net7.0/NLog.Extensions.Logging.dll
+/workspaces/hendrik-loesch-middleware/hendrik-loesch-middleware/bin/Debug/net7.0/NLog.Web.AspNetCore.dll

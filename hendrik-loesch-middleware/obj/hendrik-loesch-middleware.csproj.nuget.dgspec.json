@@ -41,6 +41,14 @@
             "Grpc.AspNetCore": {
               "target": "Package",
               "version": "[2.49.0, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.*, )"
+            },
+            "nlog": {
+              "target": "Package",
+              "version": "[5.1.0, )"
             }
           },
           "imports": [
