@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using hendrik_loesch_middleware.BackendAdapter;
 
 namespace hendrik_loesch_middleware.tests;
 
@@ -10,8 +11,11 @@ public class BackEndAdapterTests
     }
 
     [Test]
-    public void Test1()
+    public async Task CheckIfYouCanGetPublicationTypes()
     {
-        Assert.Pass();
+        var sut = new PublicationTypeRequester();       
+        var result = await sut.GetPublicationTypesAsync();
+
+        Assert.IsTrue(result.Count() > 0);
     }
 }
